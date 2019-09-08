@@ -417,6 +417,10 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl:64 \
     android.hardware.sensors@1.0-service
 
+# Shims
+PRODUCT_PACKAGES += \
+    libcamera_sdm660_shim
+    
 # System
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.binary_xml=false

@@ -66,7 +66,7 @@ function blob_fixup() {
             ;;
         system_ext/lib64/libdpmframework.so)
             for LIBSHIM_DPMFRAMEWORK in $(grep -L "libshim_dpmframework.so" "${2}"); do
-                "${PATCHELF}" --add-needed "libshim_dpmframework.so" "$LIBSHIM_DPMFRAMEWORK"
+            "${PATCHELF}" --add-needed "libshim_dpmframework.so" "$LIBSHIM_DPMFRAMEWORK"
             done
             ;;
         vendor/bin/mlipayd@1.1)
@@ -75,6 +75,9 @@ function blob_fixup() {
         vendor/lib64/libmlipay.so | vendor/lib64/libmlipay@1.1.so)
             "${PATCHELF}" --remove-needed vendor.xiaomi.hardware.mtdservice@1.0.so "${2}"
             sed -i "s|/system/etc/firmware|/vendor/firmware\x0\x0\x0\x0|g" "${2}"
+            ;;
+        vendor/lib/hw/camera.sdm660.so)
+            "${PATCHELF}" --add-needed libcamera_sdm660_shim.so "${2}"
             ;;
     esac
 }
