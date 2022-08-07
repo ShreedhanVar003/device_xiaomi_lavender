@@ -159,8 +159,6 @@ ro.vendor.extension_library=libqti-perfd-client.so
 persist.radio.multisim.config=dsds
 persist.vendor.data.iwlan.enable=true
 persist.vendor.data.mode=concurrent
-persist.vendor.qti.telephony.vt_cam_interface=2
-persist.radio.VT_CAM_INTERFACE=2
 persist.vendor.radio.apm_sim_not_pwdn=1
 persist.vendor.radio.atfwd.start=true
 persist.vendor.radio.custom_ecc=1
@@ -180,9 +178,6 @@ ro.vendor.sensors.pmd=true
 ro.vendor.sensors.sta_detect=true
 ro.vendor.sensors.mot_detect=true
 
-# QTI
-ro.vendor.qti.sys.fw.bservice_enable=true
-
 # SoC
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=SDM660
@@ -192,6 +187,3 @@ ro.surface_flinger.has_wide_color_display=true
 
 # Time
 persist.vendor.delta_time.enable=true
-
-# Zygote
-persist.device_config.runtime_native.usap_pool_enabled=true
