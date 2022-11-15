@@ -76,6 +76,9 @@ function blob_fixup() {
             "${PATCHELF}" --remove-needed vendor.xiaomi.hardware.mtdservice@1.0.so "${2}"
             sed -i "s|/system/etc/firmware|/vendor/firmware\x0\x0\x0\x0|g" "${2}"
             ;;
+        vendor/lib/miwatermark.so)
+            "${PATCHELF}" --add-needed "libwatermark_shim.so" "${2}"
+            ;;   
     esac
 }
 
