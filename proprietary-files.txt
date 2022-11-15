@@ -97,7 +97,6 @@ product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 lib64/libseemore.so
 vendor/lib/hw/camera.sdm660.so
 vendor/lib/libFaceGrade.so
-vendor/lib/libMegviiFacepp-0.5.2.so
 vendor/lib/libSNPE.so
 vendor/lib/libSonyIMX376C3RmscLibrary.so
 vendor/lib/libSonyIMX376KRmscLibrary.so
@@ -114,7 +113,6 @@ vendor/lib/libhal_dbg.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
-vendor/lib/libmegface.so
 vendor/lib/libmibokeh_660.so
 vendor/lib/libmm-qcamera.so
 vendor/lib/libmmjpeg.so
@@ -1009,7 +1007,6 @@ vendor/etc/camera/lavender_s5kgm1_sunny_india_ii_chromatix.xml
 vendor/etc/camera/lf_facerank_model.bin
 vendor/etc/camera/male_bg.png
 vendor/etc/camera/male_icon.png
-vendor/etc/camera/megviifacepp_model
 vendor/etc/camera/model_back.dlc
 vendor/etc/camera/model_front.dlc
 vendor/etc/camera/score_bg.png
