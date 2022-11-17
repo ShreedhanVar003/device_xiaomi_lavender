@@ -21,6 +21,9 @@ genfscon sysfs /devices/soc/soc:fpc1020                         u:object_r:sysfs
 # Graphics
 genfscon sysfs /devices/virtual/graphics/fb0/idle_state         u:object_r:sysfs_graphics:s0
 
+# HVDCP
+genfscon sysfs /devices/soc/c176000.i2c/i2c-2/2-001d/name   u:object_r:vendor_sysfs_hvdcp:s0
+
 # LED
 genfscon sysfs /devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d000/leds/button-backlight      u:object_r:sysfs_graphics:s0
 genfscon sysfs /devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d000/leds/button-backlight1     u:object_r:sysfs_graphics:s0
