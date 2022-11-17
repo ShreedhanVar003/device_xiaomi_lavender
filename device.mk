@@ -15,12 +15,6 @@ PRODUCT_PACKAGES += \
     
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
-# Soong namespaces
-PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-    hardware/google/interfaces \
-    hardware/google/pixel
-
 # Call recording for Google Dialer
 ifneq ($(WITH_GAPPS),true)
 PRODUCT_COPY_FILES += \
@@ -440,6 +434,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcamera_sdm660_shim
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
+    hardware/google/interfaces \
+    hardware/google/pixel \
+    hardware/xiaomi
+    
 # System
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.binary_xml=false
