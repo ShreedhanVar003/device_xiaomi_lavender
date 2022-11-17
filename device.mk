@@ -84,6 +84,7 @@ PRODUCT_PACKAGES += \
     libvolumelistener
 
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth.audio@2.0-impl:32 \
     audio.bluetooth.default
 
@@ -179,12 +180,13 @@ PRODUCT_PACKAGES += \
     memtrack.sdm660 \
     libdisplayconfig \
     libtinyxml \
+    libtinyxml.vendor \
     libqdMetaData \
     libqdMetaData.system \
     libqdMetaData.vendor
 
 PRODUCT_PACKAGES += \
-    android.frameworks.displayservice@1.0 \
+    android.frameworks.displayservice@1.0_32 \
     android.frameworks.displayservice@1.0.vendor \
     android.hardware.graphics.allocator@2.0-impl \
     android.hardware.graphics.allocator@2.0-service \
@@ -194,7 +196,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
-    android.frameworks.displayservice@1.0 \
     vendor.display.config@2.0 \
     vendor.display.config@2.0.vendor
 
@@ -204,6 +205,7 @@ PRODUCT_COPY_FILES += \
 
 # DRM
 PRODUCT_PACKAGES += \
+    android.hardware.drm@1.1.vendor \
     android.hardware.drm@1.4-service.clearkey \
     android.hardware.drm@1.4.vendor
 
@@ -224,6 +226,10 @@ PRODUCT_PACKAGES += \
 # Freeform Multiwindow
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.freeform_window_management.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.freeform_window_management.xml
+
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor
 
 # GPS / Location
 PRODUCT_PACKAGES += \
@@ -256,8 +262,10 @@ endif
 
 # HIDL
 PRODUCT_PACKAGES += \
+    android.hidl.allocator@1.0.vendor \
     android.hidl.base@1.0 \
     android.hidl.base@1.0.vendor \
+    android.hidl.memory@1.0.vendor \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
@@ -298,7 +306,6 @@ PRODUCT_COPY_FILES += \
 
 # Keystore
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0.vendor \
     android.hardware.keymaster@4.0.vendor
 
 # Lights
@@ -346,6 +353,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
+    android.hardware.power@1.2.vendor \
     android.hardware.power-service.xiaomi-libperfmgr \
     android.hardware.power.stats@1.0-service.mock \
     vendor.qti.hardware.perf@2.2.vendor
@@ -371,7 +379,8 @@ PRODUCT_COPY_FILES += \
 
 # QMI
 PRODUCT_PACKAGES += \
-    libjson
+    libjson \
+    libjson.vendor
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -381,8 +390,12 @@ PRODUCT_PACKAGES += \
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.5 \
+    android.hardware.radio@1.5.vendor \
     android.hardware.radio.config@1.2 \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.secure_element@1.2 \
+    android.hardware.secure_element@1.2.vendor \
     rild \
     librmnetctl \
     libprotobuf-cpp-full
