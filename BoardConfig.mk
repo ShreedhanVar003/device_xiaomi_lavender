@@ -20,6 +20,7 @@ TARGET_NO_BOOTLOADER := true
 
 # Platform
 TARGET_BOARD_PLATFORM := sdm660
+TARGET_ENFORCES_QSSI := true
 
 # Android Verified Boot
 BOARD_AVB_ENABLE := true
