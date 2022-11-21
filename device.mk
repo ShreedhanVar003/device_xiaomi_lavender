@@ -83,7 +83,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth.audio@2.0-impl:32 \
-    audio.bluetooth.default
+    audio.bluetooth.default \
+    bt_stack.conf
 
 PRODUCT_PACKAGES += \
     libhdmiedid \
@@ -209,7 +210,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.1.vendor \
     android.hardware.drm@1.4-service.clearkey \
-    android.hardware.drm@1.3.vendor
+    android.hardware.drm@1.4.vendor
 
 # FM
 PRODUCT_PACKAGES += \
@@ -396,10 +397,12 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.5 \
-    android.hardware.radio@1.5.vendor \
-    android.hardware.radio.config@1.2 \
-    android.hardware.radio.config@1.2.vendor \
+    android.system.net.netd@1.1.vendor \
+    android.hardware.radio@1.6 \
+    android.hardware.radio@1.6.vendor \
+    android.hardware.radio.config@1.3 \
+    android.hardware.radio.config@1.3.vendor \
+    android.hardware.radio.deprecated@1.0 \
     android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.secure_element@1.2 \
     android.hardware.secure_element@1.2.vendor \
@@ -427,6 +430,7 @@ PRODUCT_COPY_FILES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0 \
+    android.frameworks.sensorservice@1.0.vendor \
     android.hardware.sensors@1.0-impl:64 \
     android.hardware.sensors@1.0-service
 
