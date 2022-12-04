@@ -6,10 +6,10 @@
 
 DEVICE_PATH := device/xiaomi/lavender
 
+# Build Rules
 RELAX_USES_LIBRARY_CHECK := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
-
-BOARD_VENDOR := xiaomi
+BUILD_BROKEN_DUP_RULES := true
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := lavender
@@ -20,6 +20,7 @@ TARGET_NO_BOOTLOADER := true
 
 # Platform
 TARGET_BOARD_PLATFORM := sdm660
+BOARD_VENDOR := xiaomi
 
 # Android Verified Boot
 BOARD_AVB_ENABLE := true
