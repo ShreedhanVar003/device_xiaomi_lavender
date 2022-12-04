@@ -1,5 +1,6 @@
 # All blobs from lavender-user 10 QKQ1.190910.002 V12.0.3.0.QFGEUXM release-keys, unless pinned
 # jasmine package version: V11.0.28.0.QDIMIXM, unless stated otherwise
+# lavender package version: V12.0.3.0.QFGEUXM, unless stated otherwise
 
 # ADSP - from jasmine
 vendor/bin/adsprpcd|0cdd541ee0a365c5dccd0613e495611f4d0f6607
@@ -1016,7 +1017,9 @@ vendor/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin
 # Camera-dependency
 vendor/lib/libdng_sdkvendor.so
 vendor/lib/libft2vendor.so
-vendor/lib/miwatermark.so
+
+# Camera-dependency (Patched) - from lavender
+vendor/lib/miwatermark.so|fec6a297099ea1997a4c0918c731ffbb69234229
 
 # Camera-firmware
 vendor/firmware/cpp_firmware_v1_10_0.fw

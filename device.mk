@@ -319,6 +319,10 @@ PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor
 
+# MiWatermark
+PRODUCT_PACKAGES += \
+    libwatermark_shim
+    
 # Network
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor \
