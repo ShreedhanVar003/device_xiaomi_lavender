@@ -42,4 +42,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <!-- Max visible notification icons -->
     <integer name="config_maxVisibleNotificationIcons">5</integer>
     <integer name="config_maxVisibleNotificationIconsOnLock">5</integer>
+    
+    <!-- Burn in protection -->
+    <bool name="config_statusBarBurnInProtection">true</bool>
 </resources>
