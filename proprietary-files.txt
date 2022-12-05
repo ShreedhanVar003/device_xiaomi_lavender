@@ -1234,7 +1234,7 @@ vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.lirc.sdm660.so|
 # ConsumerIR (spi) - from jasmine V11.0.28.0.QDIMIXM
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.spi.sdm660.so|d1f275a91557dfab52e82906986c5094fe078722
 
-# DIRAC - from clarencelol-sdm660 
+# DIRAC - from clarencelol-sdm660
 vendor/etc/diracmobile.config|88fa19095df9e256f0af510df266f749bf60e258
 vendor/lib/soundfx/libdirac.so|f63826a905b520fa524e4c1b147be7cf65240953
 vendor/lib/libDiracAPI_SHARED.so|42b49679d38eca93fead05ea06ddbdc8108fd4b1
@@ -1681,18 +1681,18 @@ vendor/lib64/vendor.qti.imsrtpservice@3.0.so|25517caf74691b812320b46b477a3f4161c
 # Radio - IMS - from mojito
 vendor/lib64/lib-imsvtcore.so|47d945bf976134fdb57b4f44dd73a1347f2bf421
 
-# Sensors
-vendor/bin/sensors.qti
-vendor/etc/sensors/hals.conf
-vendor/etc/sensors/sensor_def_qcomdev.conf
-vendor/lib/hw/activity_recognition.sdm660.so
-vendor/lib/libsensor1.so
-vendor/lib/libsensor_reg.so
-vendor/lib64/hw/activity_recognition.sdm660.so
-vendor/lib64/libsensor1.so
-vendor/lib64/libsensor_reg.so
-vendor/lib64/sensors.elliptic.so
-vendor/lib64/sensors.touch.so
+# Sensors - from LA.UM.9.2.1.r1-08700-sdm660.0
+system_ext/lib/vendor.qti.hardware.sensorscalibrate@1.0.so|4307a6f48c60076d2c8fa688cb699f3aceddc4f8
+system_ext/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so|00569f4022ccdd8fc2e01ed515a9035604abfbed
+vendor/bin/sensors.qti|4a9d9a0c6f7269b265f7800fcbdd48bf3e925b93
+vendor/lib/hw/activity_recognition.sdm660.so|b81d49cb6781f2255188efeca0965f2c645cf3ac
+vendor/lib/libsensor1.so|c247730400d71e6c1b67626d2109cf52c9a57da1
+vendor/lib/libsensor_reg.so|8fc19423b5b39b0518c271b5ed5d8115e1ebdc50
+vendor/lib/sensor_calibrate.so|8fe40dfb1f10d6486b60f2a99e21e0fcf7344318
+vendor/lib64/hw/activity_recognition.sdm660.so|a21e1daa7a0f2dd111a9d9539602cd09580f69c8
+vendor/lib64/libsensor1.so|99405c9be06abaa21d29f16f6a30e8af154a9193
+vendor/lib64/libsensor_reg.so|b18e116898180bc196374ca76390e78e4a295dcb
+vendor/lib64/sensor_calibrate.so|9f0cd5ba6e11c50765f090deb6d8697e2eb3a187
 
 # Sensors - from PL2_sprout-user 10 QKQ1.190828.002 00WW_4_150
 vendor/lib/sensors.ssc.so|bee13b2ad7f1ef0d2cf63708fa38ad76877ea287
@@ -1748,4 +1748,3 @@ vendor/lib64/liboemcrypto.so|cf493ea8b86ef13a55ca4fb675c176405afd42fb
 
 # Wifi
 vendor/bin/cnss-daemon
-
