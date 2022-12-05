@@ -96,6 +96,7 @@ persist.vendor.camera.HAL3.enabled=1
 persist.vendor.camera.manufacturer=Xiaomi
 persist.vendor.camera.model=Redmi Note 7
 persist.vendor.camera.awb.sync=2
+persist.vendor.camera.perflock.enable=0
 
 # Dalvik
 dalvik.vm.heapgrowthlimit=256m
