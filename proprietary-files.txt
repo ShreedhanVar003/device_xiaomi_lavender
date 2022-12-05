@@ -1,5 +1,6 @@
 # All blobs from lavender-user 10 QKQ1.190910.002 V12.0.3.0.QFGEUXM release-keys, unless pinned
 # SLD_sprout package version: 11-RKQ1.210607.001-00WW_3_710-release-keys
+# ddv_sprout package version: 11-RKQ1.210607.001-00WW_3_440-release-keys
 # jasmine package version: V11.0.28.0.QDIMIXM, unless stated otherwise
 # lavender package version: V12.0.3.0.QFGEUXM, unless stated otherwise
 
@@ -1732,11 +1733,11 @@ vendor/bin/thermal-engine|fc23647cf4ccf8f056477ecbb29169c35627b95a
 -vendor/lib64/libthermalclient.so|20f1fd238fc81bf1c6828ec416121c0ef66e0df1
 vendor/lib64/libthermalioctl.so|e1844c66a556946b45bcb6c2e747460aa5201770
 
-# Time services - from jasmine
--vendor/app/TimeService/TimeService.apk|27f9b81621c446baa8c37581d9bfbca2fd67b496
-vendor/bin/time_daemon|d647fa02dfb28b6cb981c4e77daee75a67406351
+# Time services - from ddv_sprout
+-vendor/app/TimeService/TimeService.apk|aae6864069e8117bb8e899fe4b45c1865f76d682
+vendor/bin/time_daemon|48401d7f85c87aa3e12ce7b4a969a50cbf59c293
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
-vendor/lib64/libtime_genoff.so|c8e0bbc9c6b7b5beddba43bc4125a9eaeba7c79f
+vendor/lib64/libtime_genoff.so|8bb116ad297a5e4a94da2f10509509cb6e863a5f
 
 # TUI - from jasmine
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|a0d692fe10ef9dc4479497fa666640612f06fbb4
@@ -1757,5 +1758,5 @@ vendor/lib64/libwvhidl.so|0466cd3b2a7b93efd23945e2637430513472ad7c
 vendor/lib/liboemcrypto.so|938a2325da1c4d4210f78276f43e689b66ec5ae4
 vendor/lib64/liboemcrypto.so|cf493ea8b86ef13a55ca4fb675c176405afd42fb
 
-# Wifi
-vendor/bin/cnss-daemon
+# Wi-Fi - from ddv_sprout
+vendor/bin/cnss-daemon|1c63b8f94ba601b76edb0ee2fa1d1880de8d0ea3
