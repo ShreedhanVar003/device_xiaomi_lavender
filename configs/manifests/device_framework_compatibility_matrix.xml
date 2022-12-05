@@ -374,6 +374,14 @@
     </interface>
 </hal>
 <hal format="hidl" optional="true">
+    <name>vendor.qti.hardware.</name>
+    <version>2.2</version>
+    <interface>
+        <name>IPerf</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
     <name>vendor.qti.hardware.qdutils_disp</name>
     <version>1.0</version>
     <interface>
