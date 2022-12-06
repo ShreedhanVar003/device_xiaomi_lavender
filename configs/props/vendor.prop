@@ -97,6 +97,7 @@ persist.vendor.camera.manufacturer=Xiaomi
 persist.vendor.camera.model=Redmi Note 7
 persist.vendor.camera.awb.sync=2
 persist.vendor.camera.perflock.enable=0
+persist.sys.camera.camera2=true
 
 # Dalvik
 dalvik.vm.heapgrowthlimit=256m
@@ -168,11 +169,12 @@ ro.vendor.use_data_netmgrd=true
 # Sensor
 ro.vendor.sdk.sensors.gestures=false
 ro.vendor.sensors.cmc=false
+ro.vendor.sensors.dev_ori=fasle
 ro.vendor.sensors.facing=false
-ro.vendor.sensors.dev_ori=true
-ro.vendor.sensors.pmd=true
-ro.vendor.sensors.sta_detect=true
 ro.vendor.sensors.mot_detect=true
+ro.vendor.sensors.pmd=true
+ro.vendor.sensors.pug = true
+ro.vendor.sensors.sta_detect=true
 
 # SoC
 ro.soc.manufacturer=Qualcomm
