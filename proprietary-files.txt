@@ -2,7 +2,6 @@
 # SLD_sprout package version: 11-RKQ1.210607.001-00WW_3_710-release-keys
 # ddv_sprout package version: 11-RKQ1.210607.001-00WW_3_440-release-keys
 # jasmine package version: V11.0.28.0.QDIMIXM, unless stated otherwise
-# lavender package version: V12.0.3.0.QFGEUXM, unless stated otherwise
 
 # ADSP - from jasmine
 vendor/bin/adsprpcd|0cdd541ee0a365c5dccd0613e495611f4d0f6607
